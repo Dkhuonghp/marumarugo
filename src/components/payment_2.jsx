@@ -52,7 +52,7 @@ const Cart = props => {
           setTotalVoucherClass("");
           setTotalVoucher(8000);
         }
-      };
+    };
 
 
     const cartItems = useSelector((state) => state.cartItems.value)

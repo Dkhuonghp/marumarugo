@@ -12,17 +12,22 @@ import heroSliderData from '../assets/fake-data/hero-slider'
 import policy from '../assets/fake-data/policy'
 import productData from '../assets/fake-data/products'
 import numberWithCommas from '../utils/numberWithCommas'
+import Banner from "../components/Banner/Banner"
 
+import Icon_1 from "../assets/images/products/icon_1.png"
+import Icon_2 from "../assets/images/products/icon_2.png"
+import Icon_3 from "../assets/images/products/icon_3.png"
 const Home = () => {
     return (
         <Helmet title="home">
             {/* hero slider */}
-            <HeroSlider
+            {/* <HeroSlider
                 data={heroSliderData}
                 control={true}
                 auto={true}
                 timeOut={5000}
-            />
+            /> */}
+            <Banner/>
             {/* end hero slider */}
 
             {/* policy section */}
@@ -51,7 +56,8 @@ const Home = () => {
             {/* best selling section */}
             <Section>
                 <SectionTitle>
-                    オススメの人気商品
+                    <img src={Icon_1} alt="icon_1" />
+                    あなたにオススメ
                 </SectionTitle>
                 <SectionBody>
                     <Grid
@@ -81,7 +87,8 @@ const Home = () => {
             {/* new arrival section */}
             <Section>
                 <SectionTitle>
-                   新着
+                    <img src={Icon_2} alt="" />
+                    オススメの人気商品
                 </SectionTitle>
                 <SectionBody>
                     <Grid
@@ -121,7 +128,8 @@ const Home = () => {
             {/* popular product section */}
             <Section>
                 <SectionTitle>
-                    セール
+                    <img src={Icon_3} alt="" />
+                    売れ筋商品
                 </SectionTitle>
                 <SectionBody>
                     <Grid

@@ -111,86 +111,89 @@ const Catalog = () => {
 
     return (
         <Helmet title="category">
-            <div className="section__title">カテゴリー</div>
+            <div className = "section">
+                
+                <div className="section__title">カテゴリー</div>
 
-            <div className="catalog">
-                <div className="catalog__filter" ref={filterRef}>
-                    <div className="catalog__filter__close" onClick={() => showHideFilter()}>
-                        <i className="bx bx-left-arrow-alt"></i>
-                    </div>
-                    <div className="catalog__filter__widget">
-                        <div className="catalog__filter__widget__title">
-                            メーカー
+                <div className="catalog">
+                    <div className="catalog__filter" ref={filterRef}>
+                        <div className="catalog__filter__close" onClick={() => showHideFilter()}>
+                            <i className="bx bx-left-arrow-alt"></i>
                         </div>
-                        
-                        <div className="catalog__filter__widget__content">
-                            {
-                                category.map((item, index) => (
-                                    <div key={index} className="catalog__filter__widget__content__item">
-                                        <CheckBox
-                                            label={item.display}
-                                            onChange={(input) => filterSelect("CATEGORY", input.checked, item)}
-                                            checked={filter.category.includes(item.categorySlug)}
-                                        />
-                                    </div>
-                                ))
-                            }
+                        <div className="catalog__filter__widget">
+                            <div className="catalog__filter__widget__title">
+                                メーカー
+                            </div>
+                            
+                            <div className="catalog__filter__widget__content">
+                                {
+                                    category.map((item, index) => (
+                                        <div key={index} className="catalog__filter__widget__content__item">
+                                            <CheckBox
+                                                label={item.display}
+                                                onChange={(input) => filterSelect("CATEGORY", input.checked, item)}
+                                                checked={filter.category.includes(item.categorySlug)}
+                                            />
+                                        </div>
+                                    ))
+                                }
+                            </div>
                         </div>
-                    </div>
 
-                    <div className="catalog__filter__widget">
-                        <div className="catalog__filter__widget__title">
-                            カラー
+                        <div className="catalog__filter__widget">
+                            <div className="catalog__filter__widget__title">
+                                カラー
+                            </div>
+                            <div className="catalog__filter__widget__content">
+                                {
+                                    colors.map((item, index) => (
+                                        <div key={index} className="catalog__filter__widget__content__item">
+                                            <CheckBox
+                                                label={item.display}
+                                                onChange={(input) => filterSelect("COLOR", input.checked, item)}
+                                                checked={filter.color.includes(item.color)}
+                                            />
+                                        </div>
+                                    ))
+                                }
+                            </div>
                         </div>
-                        <div className="catalog__filter__widget__content">
-                            {
-                                colors.map((item, index) => (
-                                    <div key={index} className="catalog__filter__widget__content__item">
-                                        <CheckBox
-                                            label={item.display}
-                                            onChange={(input) => filterSelect("COLOR", input.checked, item)}
-                                            checked={filter.color.includes(item.color)}
-                                        />
-                                    </div>
-                                ))
-                            }
-                        </div>
-                    </div>
 
-                    <div className="catalog__filter__widget">
-                        <div className="catalog__filter__widget__title">
-                            サイズ
+                        <div className="catalog__filter__widget">
+                            <div className="catalog__filter__widget__title">
+                                サイズ
+                            </div>
+                            <div className="catalog__filter__widget__content">
+                                {
+                                    size.map((item, index) => (
+                                        <div key={index} className="catalog__filter__widget__content__item">
+                                            <CheckBox
+                                                label={item.display}
+                                                onChange={(input) => filterSelect("SIZE", input.checked, item)}
+                                                checked={filter.size.includes(item.size)}
+                                            />
+                                        </div>
+                                    ))
+                                }
+                            </div>
                         </div>
-                        <div className="catalog__filter__widget__content">
-                            {
-                                size.map((item, index) => (
-                                    <div key={index} className="catalog__filter__widget__content__item">
-                                        <CheckBox
-                                            label={item.display}
-                                            onChange={(input) => filterSelect("SIZE", input.checked, item)}
-                                            checked={filter.size.includes(item.size)}
-                                        />
-                                    </div>
-                                ))
-                            }
-                        </div>
-                    </div>
 
-                    {/* <div className="catalog__filter__widget">
-                        <div className="catalog__filter__widget__content">
-                            <Button size="sm" onClick={clearFilter}>キャンセル</Button>
-                        </div>
+                        {/* <div className="catalog__filter__widget">
+                            <div className="catalog__filter__widget__content">
+                                <Button size="sm" onClick={clearFilter}>キャンセル</Button>
+                            </div>
+                        </div> */}
+                    </div>
+                    {/* <div className="catalog__filter__toggle">
+                        <Button size="sm" onClick={() => showHideFilter()}>bộ lọc</Button>
                     </div> */}
-                </div>
-                {/* <div className="catalog__filter__toggle">
-                    <Button size="sm" onClick={() => showHideFilter()}>bộ lọc</Button>
-                </div> */}
 
-                {/* //! Products */}
-                <div className="catalog__content">
-                    <InfinityList
-                        data={products}
-                    />
+                    {/* //! Products */}
+                    <div className="catalog__content">
+                        <InfinityList
+                            data={products}
+                        />
+                    </div>
                 </div>
             </div>
         </Helmet>

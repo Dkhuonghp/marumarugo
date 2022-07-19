@@ -95,7 +95,7 @@ const HeroSliderItem = props => (
         <div className="hero-slider__item__image">
             {/* <div className={`shape bg-${props.item.color}`}></div> */}
             {/* <img src={props.item.img} alt="" /> */}
-            <model-viewer src= { props.item.img } camera-controls ar ios-src= { props.item.img }></model-viewer>
+            <model-viewer src= { props.item.img} camera-controls ar ios-src= { props.item.img }></model-viewer>
 
         </div>
     </div>

@@ -1,0 +1,140 @@
+.banner {
+    width: 100%;
+}
+.Banner {
+    position: relative;
+    margin-bottom: 70px;
+  }
+  .banner-container {
+    width: 100%;
+    height: 100vh;
+  }
+  .banner-first {
+    overflow: hidden;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://as1.ftcdn.net/v2/jpg/04/15/20/30/1000_F_415203093_qBJ74Tgk8HBWvvtWphmuB0pbWmCq1WFi.jpg);
+    transition: 1s;
+    flex-direction: column;
+  }
+  
+  .banner-second {
+    overflow: hidden;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://as1.ftcdn.net/v2/jpg/01/92/17/26/1000_F_192172649_TAaPDMuABquvATbzY0u9timVve89S8Xl.jpg);
+    transition: 1s;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 130px;
+    padding-bottom: 10px;
+  }
+  
+  .banner-third {
+    overflow: hidden;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://as1.ftcdn.net/v2/jpg/01/19/28/20/1000_F_119282042_5TOt280We8DizUINTaxKusJzcRCRbWNX.jpg);
+    transition: 1s;
+    flex-direction: column;
+  }
+  
+  .hide {
+    opacity: 0;
+  }
+  
+  .choose-slide {
+    position: absolute;
+    bottom: 40px;
+  }
+  
+  .choose-line {
+    background-color: #999;
+    height: 3px;
+    width: 20px;
+    margin: 0px 5px;
+  }
+  
+  .choose_line_active {
+    background-color: #000;
+  }
+  
+  .choose-line:hover {
+    background-color: #ddd;
+  }
+  
+  .scrolled {
+    transform: translateY(-100px);
+  }
+  
+  .white {
+    background: rgba(255, 255, 255, 1);
+  }
+  
+  .banner-title {
+    font-weight: 100;
+    font-size: 10rem;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    // color: red;
+  }
+  
+  .banner-link {
+    font-size: 11px;
+    margin: 0 20px;
+  }
+  
+  .banner-link-second {
+    margin-left: 180px;
+  }
+  
+  .banner-link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #000;
+    bottom: -3px;
+  }
+  
+  .RecommendBanner {
+    padding: 40px 40px 0px 40px;
+  }
+  
+  .RecommendBanner-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .banner-box {
+    width: 50%;
+    height: 535px;
+    margin: 0;
+  }
+  
+  .banner-top {
+    width: 100%;
+    height: 50%;
+  }
+  
+  .banner-top2 {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .banner-bottom {
+    width: 100%;
+    height: 50%;
+  }

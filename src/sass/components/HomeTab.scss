@@ -1,0 +1,52 @@
+.HomeTab {
+    padding: 0 25px;
+    margin-top: 30px;
+  }
+  
+  .home-tab {
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .home-tab p {
+    font-size: 15px;
+    margin: 0 25px;
+    color: #667;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 0;
+    font-weight: bold;
+  }
+  
+  .home-tab-active {
+    color: #111 !important;
+  }
+  .home-tab-active::after {
+    width: 100% !important; 
+    animation-name: none!important;
+  }
+  
+  .home-tab p:hover {
+    color: #111;
+  }
+  
+  .home-tab p::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #000;
+    margin-top: 3px;
+    right: 0;
+    bottom: -3px;
+    transition: all .5s;
+    width: 0;
+    position: absolute;
+  }
+  
+  .home-tab p:hover::after {
+    animation-name: active_line;
+    animation-duration: 0.4s;
+    width: 100%;
+    left: 0;
+  }
+  
