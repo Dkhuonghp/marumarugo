@@ -10,6 +10,10 @@ import classNames from 'classnames';
 
 const mainNav = [
     {
+        display: "ホーム",
+        path: "/"
+    },
+    {
         display: "カテゴリ",
         path: "/catalog"
     },

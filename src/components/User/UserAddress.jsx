@@ -56,11 +56,11 @@ export default function App() {
         <Link to="/addressform" className="address__add">
             お届け先住所を追加
         </Link>
-      <div>
+      {/* <div>
         <div className="address__title">観覧履歴</div>
           <input type="radio" /> 
           <input type="radio" />
-      </div>
+      </div> */}
     </div>
   );
 }
