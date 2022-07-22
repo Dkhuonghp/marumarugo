@@ -4,11 +4,11 @@ const product_01_image_03 = ('../model/sneaker_1/sneaker_1.jpg')
 
 const product_02_image_01 = ('../model/sneaker_2/scene.gltf')
 const product_02_image_02 = ('../model/sneaker_2/scene.usdz')
-const product_02_image_03 = ('../model/sneaker_2/sneaker_2.jpg')
+const product_02_image_03 = ('../model/sneaker_2/sneaker_2.png')
 
 const product_03_image_01 = ('../model/sneaker_3/scene.gltf')
 const product_03_image_02 = ('../model/sneaker_3/scene.usdz')
-const product_03_image_03 = ('../model/sneaker_3/sneaker_3.jpg')
+const product_03_image_03 = ('../model/sneaker_3/sneaker_3.png')
 
 
 const product_04_image_01 = ('../model/sneaker_4/scene.gltf')
@@ -18,7 +18,7 @@ const product_04_image_03 = ('../model/sneaker_4/sneaker_4.jpg')
 
 const product_05_image_01 = ('../model/sneaker_5/scene.gltf')
 const product_05_image_02 = ('../model/sneaker_5/scene.usdz')
-const product_05_image_03 = ('../model/sneaker_5/sneaker_5.jpg')
+const product_05_image_03 = ('../model/sneaker_5/sneaker_5.png')
 
 
 const product_06_image_01 = ('../model/sneaker_6/scene.gltf')
@@ -58,12 +58,12 @@ const product_12_image_03 = ('../model/sneaker_12/sneaker_12.png')
 
 const product_13_image_01 = ('../model/sneaker_13/scene.gltf')
 const product_13_image_02 = ('../model/sneaker_13/scene.usdz')
-const product_13_image_03 = ('../model/sneaker_13/sneaker_13.jpg')
+const product_13_image_03 = ('../model/sneaker_13/sneaker_13.png')
 
 
 const product_14_image_01 = ('../model/sneaker_14/scene.gltf')
 const product_14_image_02 = ('../model/sneaker_14/scene.usdz')
-const product_14_image_03 = ('../model/sneaker_14/sneaker_14.jpg')
+const product_14_image_03 = ('../model/sneaker_14/sneaker_14.png')
 
 
 const product_15_image_01 = ('../model/sneaker_15/scene.gltf')
@@ -73,27 +73,27 @@ const product_15_image_03 = ('../model/sneaker_15/sneaker_15.jpg')
 
 const product_16_image_01 = ('../model/sneaker_16/scene.gltf')
 const product_16_image_02 = ('../model/sneaker_16/scene.usdz')
-const product_16_image_03 = ('../model/sneaker_16/sneaker_16.jpg')
+const product_16_image_03 = ('../model/sneaker_16/sneaker_16.png')
 
 
 const product_17_image_01 = ('../model/sneaker_17/scene.gltf')
 const product_17_image_02 = ('../model/sneaker_17/scene.usdz')
-const product_17_image_03 = ('../model/sneaker_17/sneaker_17.jpg')
+const product_17_image_03 = ('../model/sneaker_17/sneaker_17.png')
 
 
 const product_18_image_01 = ('../model/sneaker_18/scene.gltf')
 const product_18_image_02 = ('../model/sneaker_18/scene.usdz')
-const product_18_image_03 = ('../model/sneaker_18/sneaker_18.jpg')
+const product_18_image_03 = ('../model/sneaker_18/sneaker_18.png')
 
 
 const product_19_image_01 = ('../model/sneaker_19/scene.gltf')
 const product_19_image_02 = ('../model/sneaker_19/scene.usdz')
-const product_19_image_03 = ('../model/sneaker_19/sneaker_19.jpg')
+const product_19_image_03 = ('../model/sneaker_19/sneaker_19.png')
 
 
 const product_20_image_01 = ('../model/sneaker_20/scene.gltf')
 const product_20_image_02 = ('../model/sneaker_20/scene.usdz')
-const product_20_image_03 = ('../model/sneaker_20/sneaker_20.jpg')
+const product_20_image_03 = ('../model/sneaker_20/sneaker_20.png')
 
 
 const products = [

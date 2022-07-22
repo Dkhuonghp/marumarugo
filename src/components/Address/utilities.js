@@ -1,5 +1,5 @@
 import axios from "axios";
-const URL = "https://621e6868849220b1fc991e29.mockapi.io/address";
+const URL = "https://62d78b1251e6e8f06f1de851.mockapi.io/address/address";
 
 const addFormHandler = async (formValues, setAddresses) => {
   const response = await axios.post(URL, formValues);

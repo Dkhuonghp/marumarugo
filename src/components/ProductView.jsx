@@ -155,6 +155,7 @@ const ProductView = props => {
                 </div> */}
                 <div className="product__images__main">
                     {/* <img src={previewImg} alt="" /> */}
+                    {/* <img src={product.image03} alt="" /> */}
                     <model-viewer className="scene__model" src={product.image01} camera-controls ar ios-src={product.image02}></model-viewer>
                 </div>
             </div>

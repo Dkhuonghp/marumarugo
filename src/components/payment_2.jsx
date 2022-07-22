@@ -115,7 +115,7 @@ const Cart = props => {
                                 <div className="pay__btn">
                                     <Link to="/cart">
                                         <Button size="block">
-                                            back
+                                            戻す
                                         </Button>
                                     </Link>
                                     <Link to = '/payment'>
