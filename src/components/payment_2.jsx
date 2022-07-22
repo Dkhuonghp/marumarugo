@@ -40,17 +40,28 @@ const Cart = props => {
     const applyVoucher = () => {
         setResultApplyVoucherClass("");
         if (voucherInputValue === "") {
-          setAlertResult("コードを入力してください");
-          setResultVoucher("");
+            setAlertResult("コードを入力してください");
+            setResultVoucher("");
+          
         } else if (voucherInputValue !== "123") {
-          setAlertResult("入力したクーポン番号が認識されません。番号をもう一度ご確認のうえ、再入力してください。");
-          setResultVoucher("");
+            setAlertResult("入力したクーポン番号が認識されません。番号をもう一度ご確認のうえ、再入力してください。");
+            setResultVoucher("");
+            if (voucherInputValue !== "abc") {
+                setAlertResult("入力したクーポン番号が認識されません。番号をもう一度ご確認のうえ、再入力してください。");
+                setResultVoucher("");
+            } else {
+                setResultApplyVoucherClass("pass");
+                setAlertResult("クーポンを追加しました。");
+                setResultVoucher("割引 ¥2000");
+                setTotalVoucherClass("");
+                setTotalVoucher(Math.round(totalPrice) / 10);
+            }
         } else {
-          setResultApplyVoucherClass("pass");
-          setAlertResult("クーポンを追加しました。");
-          setResultVoucher("割引 ¥8000");
-          setTotalVoucherClass("");
-          setTotalVoucher(8000);
+            setResultApplyVoucherClass("pass");
+            setAlertResult("クーポンを追加しました。");
+            setResultVoucher("割引 ¥8000");
+            setTotalVoucherClass("");
+            setTotalVoucher(2000);
         }
     };
 

@@ -145,9 +145,7 @@ const Product = props => {
                     </div>
                     <div className="tabs__content" hidden={index !== 3}>
                         <Section>
-                            <SectionTitle>
-                                オススメの人気商品
-                            </SectionTitle>
+                            
                             <SectionBody>
                                 <Grid
                                     col={4}

@@ -58,7 +58,7 @@ const Header = () => {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            if (document.body.scrollY > 10 || document.documentElement.scrollTop > 10) {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
                 headerRef.current.classList.add('shrink')
             } else {
                 headerRef.current.classList.remove('shrink')
@@ -123,11 +123,11 @@ const Header = () => {
                                 <span className="cart__item-qty">{totalProducts}</span>
                             </Link>
                         </div>
-                        {/* <div className="header__menu__item header__menu__right__item">
+                        <div className="header__menu__item header__menu__right__item">
                             <Link to="/user">    
                                 <i className="bx bx-user"></i>
                             </Link>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -136,9 +136,8 @@ const Header = () => {
 }
 
 
+
 // class Header extends Component {
-
-
 //     constructor(props) {
 //         super(props);
 
@@ -187,15 +186,11 @@ const Header = () => {
 //     }
 
 //     render() {
-
 //         return(
 //             <div className={classNames('Header', {
 //                 scrolled: this.state.scrolled === true,
 //                 white: this.state.isWhite === true
 //                 })}>
-//                 {/* <div className="header__menu__mobile-toggle" onClick={menuToggle}>
-//                     <i className='bx bx-menu-alt-left'></i>
-//                 </div> */}
 //                 <ul className="menu">
 //                     {
 //                         mainNav.map((item, index) => (

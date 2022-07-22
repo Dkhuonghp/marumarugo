@@ -21,13 +21,13 @@ const Home = () => {
     return (
         <Helmet title="home">
             {/* hero slider */}
-            {/* <HeroSlider
+            <HeroSlider
                 data={heroSliderData}
                 control={true}
                 auto={true}
                 timeOut={5000}
-            /> */}
-            <Banner/>
+            />
+            {/* <Banner/> */}
             {/* end hero slider */}
 
             {/* policy section */}
